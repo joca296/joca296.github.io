@@ -86,8 +86,14 @@ body, html {
             }
         }
     }
+
+    .skill-col {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
 }
 
 .checked {
     color: orange;
-  }
+}
