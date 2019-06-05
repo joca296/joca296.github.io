@@ -2,6 +2,15 @@ body, html {
   height: 100%;
 }
 
+h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+ul {
+  text-align: center;
+}
+
 .row ul {
   list-style-type: none;
   margin: 0;
@@ -34,8 +43,10 @@ body, html {
 }
 
 .rounded-picture {
+  display: block;
   height: 200px;
   border: 1px solid white;
+  margin: 0 auto;
 }
 
 #personalInfo {
@@ -63,24 +74,10 @@ body, html {
   padding-bottom: 15px;
 }
 
-#education h1 {
-  text-align: center;
-  margin: 15px 0;
-}
-
-#education ul {
-  text-align: center;
-}
-
 #skills {
   padding-top: 15px;
   padding-bottom: 15px;
   color: rgba(255, 255, 255, 0.75);
-}
-
-#skills h1 {
-  text-align: center;
-  margin: 15px 0;
 }
 
 @media (max-width: 992px) {
