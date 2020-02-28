@@ -69,6 +69,10 @@ ul {
   color: rgba(255, 255, 255, 0.75);
 }
 
+#education, #skills {
+  background-color: #f0f1f3;
+}
+
 #education {
   padding-top: 15px;
   padding-bottom: 15px;
