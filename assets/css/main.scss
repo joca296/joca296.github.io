@@ -14,6 +14,7 @@ ul {
 }
 
 .row {
+    font-size: $size;
     ul {
         list-style-type: none;
         margin: 0;
@@ -45,7 +46,7 @@ ul {
 
 .rounded-picture {
     display: block;
-    height: 200px;
+    height: 300px;
     border: 1px solid white;
     margin: 0 auto;
 }
@@ -93,6 +94,11 @@ ul {
         justify-content:center;
         align-items:center;
     }
+}
+
+#experience {
+    padding-top: $padding;
+    padding-bottom: $padding;
 }
 
 .checked {

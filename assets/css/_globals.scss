@@ -9,6 +9,7 @@ $breakpoints: (
     @return map-get($breakpoints, $breakpoint);
 }
 
-$padding: 15px;
+$padding: 150px;
 $margin: 15px;
+$size: 18px;
 $ltgray: rgba(255,255,255,.75);
