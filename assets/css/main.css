@@ -1,5 +1,30 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
 body, html {
   height: 100%;
+  background-color: #f0f1f3;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -46,15 +71,15 @@ ul {
   }
 }
 
+section {
+  padding: 150px 0;
+}
+
 .rounded-picture {
   display: block;
   height: 300px;
   border: 1px solid white;
   margin: 0 auto;
-}
-
-#personalInfo {
-  padding: 150px 0;
 }
 
 #personalInfo #perosnalInfoDetails {
@@ -69,22 +94,7 @@ ul {
           align-items: center;
 }
 
-#personalInfo #perosnalInfoDetails ul li {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.gray {
-  background-color: #f0f1f3;
-}
-
-#education {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
 #skills {
-  padding-top: 150px;
-  padding-bottom: 150px;
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -106,12 +116,46 @@ ul {
           align-items: center;
 }
 
-#experience {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
 .checked {
   color: orange;
+}
+
+#heading {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#heading .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#heading .container h1 {
+  margin: 0;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.75);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,18 @@
 @import "globals";
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadein 3s;
+}
+
 body, html {
     height: 100%;
+    background-color: rgb(240, 241, 243);
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -44,6 +55,10 @@ ul {
     }
 }
 
+section {
+    padding: $padding 0;
+}
+
 .rounded-picture {
     display: block;
     height: 300px;
@@ -52,33 +67,14 @@ ul {
 }
 
 #personalInfo {
-    padding: $padding 0;
-
     #perosnalInfoDetails {
         display:flex;
         justify-content:center;
         align-items:center;
-
-        ul {
-            li {
-                color: $ltgray;
-            }
-        }
     }
 }
 
-.gray {
-    background-color: rgb(240, 241, 243);
-}
-
-#education {
-    padding-top: $padding;
-    padding-bottom: $padding;
-}
-
 #skills {
-    padding-top: $padding;
-    padding-bottom: $padding;
     color: $ltgray;
 
     ul {
@@ -96,11 +92,25 @@ ul {
     }
 }
 
-#experience {
-    padding-top: $padding;
-    padding-bottom: $padding;
-}
-
 .checked {
     color: orange;
+}
+
+#heading {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            margin: 0;
+            margin-bottom: $margin;
+            color: $ltgray;
+        }
+    }
 }

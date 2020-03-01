@@ -10,7 +10,7 @@
     <title>Jovan Sekulic - portfolio</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Jovan Sekulic</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -23,25 +23,28 @@
                         <a class="nav-link" href="#personalInfo">Personal info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="parallax">
+    <div class="parallax" id="heading">
+        <div class="container fade-in">
+            <h1>Jovan Sekulic</h1>
+            <h1>Web Developer</h1>
+            <a class="btn btn-outline-light btn-lg" href="#personalInfo">About Me</a>
+        </div>
+    </div>
+    <section id="personalInfo">
         <div class="container">
-            <div class="row" id="personalInfo">
-                <div class="col-xs-12 col-sm-6">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
                     <img src="assets/images/profile.jpg" class="img-fluid rounded-circle rounded-picture" alt="Profile picture">
                 </div>
-                <div class="col-xs-12 col-sm-6" id="perosnalInfoDetails">
+                <div class="col-md-12 col-lg-6" id="perosnalInfoDetails">
                     <ul>
                         <li><i class="fas fa-home"></i>Belgrade, Serbia</li>
                         <li><i class="fas fa-birthday-cake"></i>02.09.1996.</li>
@@ -50,32 +53,29 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="gray">
-        <div class="container">
             <div class="row">
-                <div class="col-12" id="education">
+                <div class="col-12">
                     <h1>Education</h1>
                     <ul>
-                        <li><i class="fas fa-school"></i>Computer technician at the Electotechnical School of "Nikola Tesla" in Belgrade</li>
-                        <li><i class="fas fa-university"></i>One year at the Faculty of Mathematics in Belgrade</li>
                         <li><i class="fas fa-graduation-cap"></i>Applied engineer of electrical and computer engineering at ICT College in Belgrade</li>
+                        <li><i class="fas fa-school"></i>Computer technician at the Electotechnical School of "Nikola Tesla" in Belgrade</li>
                     </ul>
                 </div>
             </div>
         </div>
+    </section>
     </div>
     <div class="parallax">
         <div class="container">
-            <div class="row">
-                <div class="col-12" id="skills">
+            <section class="row" id="skills">
+                <div class="col-12">
                     <h1>Skills</h1>
                     <div class="row">
                         <div class="col-12 col-lg-4 skill-col">
                             <ul>
                                 <li>
                                     HTML/CSS/Sass
+                                    <br>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -84,6 +84,7 @@
                                 </li>
                                 <li>
                                     JavaScript & AngularJS
+                                    <br>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -92,6 +93,7 @@
                                 </li>
                                 <li>
                                     PHP & Laravel
+                                    <br>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -104,6 +106,7 @@
                             <ul>
                                 <li>
                                     C/C++
+                                    <br>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -112,6 +115,7 @@
                                 </li>
                                 <li>
                                     C# & ASP.NET
+                                    <br>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -120,6 +124,7 @@
                                 </li>
                                 <li>
                                     Java
+                                    <br>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -132,6 +137,16 @@
                             <ul>
                                 <li>
                                     MySQL & SQL Server
+                                    <br>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </li>
+                                <li>
+                                    Firebase
+                                    <br>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -140,14 +155,7 @@
                                 </li>
                                 <li>
                                     Linux
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </li>
-                                <li>
-                                    Embedded programming
+                                    <br>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -158,11 +166,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
-    <div class="gray">
-        <div class="container" id="experience">
+    <section id="experience">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h1>Experience</h1>
@@ -196,7 +204,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
