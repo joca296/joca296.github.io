@@ -74,33 +74,8 @@ section {
     }
 }
 
-#skills {
+#education {
     color: $ltgray;
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        li {
-            width: 100%;
-
-            @media (min-width: getBreakpoint("medium")) {
-                width: 50%;
-                text-align: center;
-            }
-
-            @media (min-width: getBreakpoint("large")) {
-                width: 33%;
-                text-align: center;
-            }
-        }
-    }
-
-    .skill-col {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
 }
 
 .checked {
